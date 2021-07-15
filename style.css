@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #faf3dd;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #5b8266;
+  padding: 8px 12px;
+}
+
+.navbar_logo {
+  color: #eb8258;
+  font-size: 24px;
+}
+
+.navbar_menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.navbar_menu li {
+  padding: 8px 12px;
+}
+
+.navbar_menu li:hover {
+  background: #eb8258;
+  border-radius: 4px;
+}
+
+.navbar_icon {
+  display: flex;
+  list-style: none;
+  color: #faf3dd;
+  padding-left: 0;
+  margin: 0px;
+}
+
+.navbar_icon li {
+  padding: 8px 12px;
+}
+
+.navbar_icon li:hover {
+  background: #eb8258;
+  border-radius: 4px;
+}
+
+.navbar_togglebtn {
+  display: none;
+  position: absolute;
+  right: 32px;
+}
+
+@media screen and (max-width: 595px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar_menu {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0px;
+  }
+
+  .navbar_menu li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar_icon {
+    justify-content: center;
+    width: 100%;
+    padding: 0x;
+  }
+
+  .navbar_togglebtn {
+    display: block;
+  }
+}
